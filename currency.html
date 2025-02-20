@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge'>
+    <title>Currency Converter</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="card">
+        <h2>CURRENCY CONVERTER</h2>
+        <div class="conversion-box">
+            <div class="input-group">
+                <label for="fromCurrency">From </label>
+                <div class="select-container">
+                    <select id="fromCurrency"></select>
+                    <div class="flagCont" id="flagContainerFrom"></div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="toCurrency">To </label>
+                <div class="select-container">
+                    <select id="toCurrency"></select>
+                    <div class="flagCont" id="flagContainerTo"></div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="amount">Amount </label>
+                <input type="number" id="amount" />
+            </div>
+        </div>
+        <button id="convert">CONVERT</button>
+        <p id="result"></p>
+    </div>    
+    <script src="country.js"></script>
+    <script src="ref.js"></script>
+</body>
+</html>
